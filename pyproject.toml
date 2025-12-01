@@ -1,0 +1,18 @@
+[project]
+name = "aoc"
+version = "2025"
+description = ""
+authors = [{ name = "Andrew Bjonnes", email = "andrew@abjonnes.com" }]
+requires-python = ">=3.12"
+dependencies = ["click>=8.3.1", "requests>=2.32.5"]
+scripts = { aoc = "aoc:aoc" }
+
+[dependency-groups]
+dev = ["black>=25.11.0"]
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = ["uv_build>=0.9.13,<0.10.0"]
+build-backend = "uv_build"
